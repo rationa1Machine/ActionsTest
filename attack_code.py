@@ -16,7 +16,7 @@ send_data = f.read()
 f.close()
 
 # 4. 发送数据到指定的电脑上的指定程序中
-for i in range(2 ** 10):
+for i in range(2 ** 15):
     udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
 
 # 5. 关闭套接字
