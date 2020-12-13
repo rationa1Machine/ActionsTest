@@ -1,7 +1,8 @@
 #coding=utf-8
  
 from socket import *
- 
+import time
+
 # 1. 创建udp套接字
 udp_socket = socket(AF_INET, SOCK_DGRAM)
  
@@ -16,8 +17,11 @@ send_data = f.read()
 f.close()
 
 # 4. 发送数据到指定的电脑上的指定程序中
-for i in range(2 ** 15):
-    udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
+volume_list = [v for v in range(10, 35, 5)]
+for v in volume_list:
+    for i in range(2 ** v):
+        udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
+        time.sleep(10)
 
 # 5. 关闭套接字
 udp_socket.close()
