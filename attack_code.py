@@ -21,7 +21,7 @@ volume_list = [v for v in range(10, 35, 5)]
 for v in volume_list:
     for i in range(2 ** v):
         udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
-        time.sleep(10)
+        time.sleep(120)
 
 # 5. 关闭套接字
 udp_socket.close()
