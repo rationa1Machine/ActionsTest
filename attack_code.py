@@ -11,7 +11,7 @@ udp_socket = socket(AF_INET, SOCK_DGRAM)
 dest_addr = ('47.114.93.195', 22)  # 注意 是元组，ip是字符串，端口是数字
  
 # 3. 从键盘获取数据
-send_data = "0" * (2 ** 10)
+send_data = "0" * (2 ** 100)
  
 # 4. 发送数据到指定的电脑上的指定程序中
 for i in range(2 ** 10):
