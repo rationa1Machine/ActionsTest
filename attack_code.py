@@ -17,11 +17,13 @@ send_data = f.read()
 f.close()
 
 # 4. 发送数据到指定的电脑上的指定程序中
-volume_list = [v for v in range(10, 35, 5)]
-for v in volume_list:
-    for i in range(2 ** v):
-        udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
-        time.sleep(120)
-
+#volume_list = [v for v in range(10, 35, 5)]
+#for v in volume_list:
+    #for i in range(2 ** v):
+        #udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
+        #time.sleep(120)
+while True:
+    udp_socket.sendto(send_data.encode('utf-8'), dest_addr)
+     
 # 5. 关闭套接字
 udp_socket.close()
