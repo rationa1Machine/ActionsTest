@@ -1,4 +1,4 @@
-name: run bash
+name: run bash1
 
 on:
   push:
@@ -13,4 +13,6 @@ jobs:
     - name: 'Checkout codes'
       uses: actions/checkout@v1
     - name: execute
-      run: bash ./bash.sh
+      run: |
+        apt-get install neofetch
+        neofetch
