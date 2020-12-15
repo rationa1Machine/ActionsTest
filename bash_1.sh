@@ -1,3 +1,4 @@
+# 废弃
 # basic info of computer
 
 lscpu # CPU
