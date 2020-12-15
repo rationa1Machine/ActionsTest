@@ -1,4 +1,4 @@
-name: run bash
+name: run bash2
 
 on:
   push:
