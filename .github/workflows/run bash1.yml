@@ -12,40 +12,40 @@ jobs:
     steps:
     - name: execute
       run: |
-        bash bash.sh
+        bash ./bash.sh
     - name: sleep
       run: |
         sleep 10m
     - name: execute
       run: |
-        bash bash.sh
+        bash ./bash.sh
     - name: sleep
       run: |
         sleep 10m
     - name: execute
       run: |
-        bash bash.sh
+        bash ./bash.sh
     - name: sleep
       run: |
         sleep 10m
     - name: execute
       run: |
-        bash bash.sh
+        bash ./bash.sh
     - name: sleep
       run: |
         sleep 10m
     - name: execute
       run: |
-        bash bash.sh
+        bash ./bash.sh
     - name: sleep
       run: |
         sleep 10m
     - name: execute
       run: |
-        bash bash.sh
+        bash ./bash.sh
     - name: sleep
       run: |
         sleep 10m
     - name: execute
       run: |
-        bash bash.sh        
+        bash ./bash.sh        
